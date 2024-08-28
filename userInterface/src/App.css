@@ -1,0 +1,175 @@
+.app-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 1vmin);
+  color: #ffffff;
+}
+
+.app-header h1 {
+  margin: 10px;
+}
+
+.profile-button-container {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
+
+.profile {
+  background-color: #fff;
+  color: #282c34;
+  /* height: 75vh; */
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+  border: 1px solid black;
+  padding: 15px;
+  margin: 15px;
+  align-items: left;
+  text-align: left;
+  max-width: 300px;
+  font-size: 18px;
+  line-height: 1;
+}
+
+.profile .field-label,
+.profile .field-value {
+  margin-top: 0px;
+  margin-bottom: 10px;
+}
+
+.profile .field-label {
+  font-weight: bold;
+}
+
+.profile .field-value {
+  font-weight: normal;
+  color: #555b68;
+}
+
+.profile img {
+  width: 300px;
+  height: 300px;
+  object-fit: cover;
+  border-radius: 8px;
+  margin-bottom: 10px;
+}
+
+.profile.profile-left-animation {
+  transform: translateX(-200%);
+  transition: transform 1s ease;
+}
+
+.profile.profile-right-animation {
+  transform: translateX(200%);
+  transition: transform 1s ease;
+}
+
+.yes-button,
+.no-button {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  background-color: #61dafb;
+  color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.no-button:hover {
+  background-color: #ab1313;
+}
+
+.yes-button:hover {
+  background-color: #198434;
+}
+
+.friends-popup {
+  background-color: #fff;
+  color: #282c34;
+  height: 65vh;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+  border: 1px solid black;
+  padding: 15px;
+  margin: 15px;
+  align-items: left;
+  text-align: left;
+  max-width: 300px;
+  font-size: 20px;
+  line-height: 1;
+  position: relative;
+  overflow-y: auto;
+  transform: translateX(500%);
+  transition: transform 0.5s ease;
+}
+
+.friends-popup.visible {
+  transform: translateX(0%);
+  transition: transform 0.5s ease;
+}
+
+.friends-popup img {
+  width: 300px;
+  height: 300px;
+  object-fit: cover;
+  border-radius: 8px;
+  margin-bottom: 10px;
+}
+
+.send-button {
+  position: sticky;
+  bottom: 0;
+  left: 100%;
+  margin: 10px; /* Adjust margin as needed */
+  padding: 10px;
+  cursor: pointer;
+  background-color: #61dafb;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+}
+
+.self-button {
+  margin: 10px 25px; /* Adjust margin as needed */
+  padding: 10px;
+  width: 250px;
+  cursor: pointer;
+  background-color: #61dafb;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+}
+
+.or {
+  margin: 0px 130px;
+}
+
+.friend-box{
+  background-color: #ffffff;
+  border-radius: 5px;
+  padding-left: 5px;
+  width: 305px;
+}
+
+.friend-box.selected{
+  background-color: #cfd6d6;
+}
+
+.friend-box p{
+  padding: 5px 7px;
+}
+
+.check {
+  margin-top: 10px;
+  transform: scale(1.5);
+  position: absolute;
+  left: 90%;
+}
